@@ -1,0 +1,8 @@
+{{input type="text" title="from"}}
+
+<b>connections:</b>
+<table class="table">
+  {{#each model as |c|}}
+    {{train-connection c=c}}
+  {{/each}}
+</table>
