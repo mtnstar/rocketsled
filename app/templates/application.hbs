@@ -1,8 +1,10 @@
-<div class="container-fluid">
+<div id="main">
   <div class="titlebar span12">
-    {{#link-to 'application'}}
+    {{#link-to 'application' tagName='div'}}
       <img class="logo" src="/images/logo.png"/>
     {{/link-to}}
   </div>
-  {{outlet}}
+  <div class="container-fluid">
+    {{outlet}}
+  </div>
 </div>
